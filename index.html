@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Missionaries and Cannibals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Missionaries and Cannibals</h1>
+  
+  <div id="game">
+    <div class="side" id="leftSide">
+      <h2>Left Bank</h2>
+    </div>
+
+    <div id="boat-container">
+      <div id="boat"><h3>Boat</h3></div>
+    </div>
+
+    <div class="side" id="rightSide">
+      <h2>Right Bank</h2>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="moveBoat()">Move Boat</button>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
