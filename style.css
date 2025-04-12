@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#game {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+  width: 95%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.side {
+  width: 200px;
+  min-height: 180px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#boat-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+#boat {
+  position: absolute;
+  bottom: 0;
+  transition: left 0.8s ease-in-out;
+  width: 150px;
+  background-color: #ffecb3;
+  border: 2px solid #fbc02d;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 70px;
+}
+
+.character {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.missionary {
+  background-color: #90caf9;
+}
+
+.cannibal {
+  background-color: #ef9a9a;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  #game {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #boat-container {
+    height: 100px;
+  }
+
+  #boat {
+    left: 20%;
+  }
+}
